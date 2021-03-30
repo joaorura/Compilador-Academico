@@ -6,6 +6,8 @@ from identifiers.finals.letra_minuscula_identifier import LetraMinusculaIdentifi
 from identifiers.finals.simbolos_identifier import SimboloIdentifier
 from identifiers.finals.digitos_identifier import DigitosIdentifier
 from identifiers.finals.underline_indetifier import UnderlineIdentifier
+from identifiers.finals.constante_identifier import ConstanteIdentifier
+from identifiers.finals.retorno_identifier import RetornoIdentifier
 
 IDENTIFY_ALL_FINALS = {
     UnknowIdentifier.CATEGORY: UnknowIdentifier(),
@@ -16,4 +18,6 @@ IDENTIFY_ALL_FINALS = {
     SimboloIdentifier.CATEGORY: SimboloIdentifier(),
     DigitosIdentifier.CATEGORY: DigitosIdentifier(),
     UnderlineIdentifier.CATEGORY: UnderlineIdentifier()
+    ConstanteIdentifier.CATEGORY: ConstanteIdentifier()
+    RetornoIdentifier.CATEGORY: RetornoIdentifier()
 }

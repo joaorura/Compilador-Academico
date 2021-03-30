@@ -11,3 +11,14 @@ from identifiers.finals import UnknowIdentifier
 from identifiers.finals import VoidTipoIdentifier
 from identifiers.finals import DigitosIdentifier
 from identifiers.finals import UnderlineIdentifier
+
+from identifier.finals import ConstanteIdentifier
+from identifier.finals import RetornoIdentifier
+from identifier.finals import IfIdentifier
+from identifier.finals import ElseIdentifier
+from identifier.finals import VerdadeiroIdentifier
+from identifier.finals import FalsoIdentifier
+from identifier.finals import PrintIdentifier
+
+
+

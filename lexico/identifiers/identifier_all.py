@@ -12,9 +12,22 @@ class IdentifierAll:
             if(not issubclass(type(j), Identifier)):
                 raise Exception
 
-    def get_all_types(self):
-        return list(IDENTIFY_ALL_FINALS.keys())
+        self._all_types = list(IDENTIFY_ALL_FINALS.keys())
+        self._unknown = self._all_types[0]
+        self._types = self._all_types[1:]
 
-    def indentify(self, the_type: str, line: int, col: int, lexeme: str) -> Token:
+    def get_all_types(self):
+        return self._all_types
+
+    @staticmethod
+    def identify(the_type: str, line: int, col: int, lexeme: str) -> Token:
         return IDENTIFY_ALL_FINALS[the_type].identify(line, col, lexeme)
 
+    def identify_all(self, line: int, col: int, lexeme: str) -> Token:
+        for i in self._types:
+            result = self.identify(i, line, col, lexeme)
+
+            if result is not None:
+                return result
+
+        return self.identify(self._unknown, line, col, lexeme)

@@ -1,10 +1,11 @@
 from identifiers.identifier import Identifier
-from identifiers.type_indentifier import TypeIndetifier
-
-from tokens.token import Token
+from identifiers.tipo_indentifier import TipoIndetifier
+from identifiers.void_tipo_identifier import VoidTipoIdentifier
+from tokens import Token
 
 _IDENTIFY_ALL = {
-    TypeIndetifier.CATEGORY: TypeIndetifier()
+    TipoIndetifier.CATEGORY: TipoIndetifier(),
+    VoidTipoIdentifier.CATEGORY: VoidTipoIdentifier()
 }
 
 

@@ -4,6 +4,7 @@ from identifiers.finals.void_tipo_identifier import VoidTipoIdentifier
 from identifiers.finals.letra_maiscula_identifier import LetraMaiusculaIdentifier
 from identifiers.finals.letra_minuscula_identifier import LetraMinusculaIdentifier
 from identifiers.finals.simbolos_identifier import SimboloIdentifier
+from identifiers.finals.digitos_identifier import DigitosIdentifier
 
 IDENTIFY_ALL_FINALS = {
     UnknowIdentifier.CATEGORY: UnknowIdentifier(),
@@ -12,4 +13,5 @@ IDENTIFY_ALL_FINALS = {
     LetraMaiusculaIdentifier.CATEGORY: LetraMaiusculaIdentifier(),
     LetraMinusculaIdentifier.CATEGORY: LetraMinusculaIdentifier(),
     SimboloIdentifier.CATEGORY: SimboloIdentifier(),
+    DigitosIdentifier.CATEGORY: DigitosIdentifier()
 }

@@ -11,7 +11,7 @@ class LetraMinusculaIdentifier(Identifier):
         super().__init__(self.PATTERN)
 
     def identify(self, line: int, col: int, lexeme: str) -> LetraMinusculaToken:
-        if super().match(lexeme) == True:
+        if super().match(lexeme):
             return LetraMinusculaToken(line, col, lexeme)
         else:
             return None

@@ -5,3 +5,4 @@ from tokens.finals import SimbolosToken
 from tokens.finals import TipoToken
 from tokens.finals import UnknowToken
 from tokens.finals import VoidTipoToken
+from tokens.finals import DigitosToken

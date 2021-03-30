@@ -11,7 +11,7 @@ class VoidTipoIdentifier(Identifier):
         super().__init__(self.PATTERN)
 
     def identify(self, line: int, col: int, lexeme: str) -> VoidTipoToken:
-        if super().match(lexeme) == True:
+        if super().match(lexeme):
             return VoidTipoToken(line, col, lexeme)
         else:
             return None

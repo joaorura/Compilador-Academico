@@ -11,7 +11,7 @@ class TipoIndetifier(Identifier):
         super().__init__(self.PATTERN)
 
     def identify(self, line: int, col: int, lexeme: str) -> TipoToken:
-        if super().match(lexeme) == True:
+        if super().match(lexeme):
             return TipoToken(line, col, lexeme)
         else:
             return None

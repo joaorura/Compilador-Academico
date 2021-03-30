@@ -11,7 +11,7 @@ class LetraMaiusculaIdentifier(Identifier):
         super().__init__(self.PATTERN)
 
     def identify(self, line: int, col: int, lexeme: str) -> LetraMaiusculaToken:
-        if super().match(lexeme) == True:
+        if super().match(lexeme):
             return LetraMaiusculaToken(line, col, lexeme)
         else:
             return None

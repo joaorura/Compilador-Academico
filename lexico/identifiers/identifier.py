@@ -3,6 +3,7 @@ import re
 
 from tokens.token import Token
 
+
 class Identifier(abc.ABC):
     def __init__(self, pattern: str):
         self._pattern = pattern

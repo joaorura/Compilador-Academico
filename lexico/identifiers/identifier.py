@@ -16,5 +16,5 @@ class Identifier(abc.ABC):
         return self._pattern
 
     @abc.abstractmethod
-    def indentify(self, line: int, col: int, lexeme: str) -> Token:
+    def identify(self, line: int, col: int, lexeme: str) -> Token:
         pass

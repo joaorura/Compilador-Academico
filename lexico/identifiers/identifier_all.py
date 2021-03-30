@@ -1,5 +1,5 @@
 from identifiers.identifier import Identifier
-from identifiers.identifier_finals import IDENTIFY_ALL_FINALS
+from identifiers.finals.identifier_finals import IDENTIFY_ALL_FINALS
 from tokens import Token
 
 
@@ -16,5 +16,5 @@ class IdentifierAll:
         return list(IDENTIFY_ALL_FINALS.keys())
 
     def indentify(self, the_type: str, line: int, col: int, lexeme: str) -> Token:
-        return IDENTIFY_ALL_FINALS[the_type].indentify(line, col, lexeme)
+        return IDENTIFY_ALL_FINALS[the_type].identify(line, col, lexeme)
 

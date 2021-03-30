@@ -1,6 +1,11 @@
 from identifiers.identifier import Identifier
 from identifiers.identifier_all import IdentifierAll
-from identifiers.tipo_indentifier import TipoIndetifier
-from identifiers.void_tipo_identifier import VoidTipoIdentifier
-from identifiers.unknow_identifier import UnknowIdentifier
-from identifiers.simbolos_identifier import SimboloIdentifier
+
+from identifiers.finals import IDENTIFY_ALL_FINALS
+from identifiers.finals import IDENTIFY_WITHOUT_UNKNOW
+from identifiers.finals import LetraMaiusculaIdentifier
+from identifiers.finals import LetraMinusculaIdentifier
+from identifiers.finals import SimboloIdentifier
+from identifiers.finals import TipoIndetifier
+from identifiers.finals import UnknowIdentifier
+from identifiers.finals import VoidTipoIdentifier

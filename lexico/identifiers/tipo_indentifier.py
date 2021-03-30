@@ -3,12 +3,12 @@ from tokens import TipoToken
 
 
 class TipoIndetifier(Identifier):
-    _PATTERN = r'(bool)|(char)|(int)|(float)|(char)|(string)'
+    PATTERN = r'(bool)|(char)|(int)|(float)|(char)|(string)'
     
     CATEGORY = TipoToken.CATEGORY
 
     def __init__(self):
-        super().__init__(self._PATTERN)
+        super().__init__(self.PATTERN)
 
     def indentify(self, line: int, col: int, lexeme: str) -> TipoToken:
         if super().match(lexeme) == True:

@@ -1,9 +1,8 @@
-from identifiers import IndetifierAll
-
+from identifiers import IdentifierAll
 
 def main():
-    indentifier_all = IndetifierAll()
-    print(indentifier_all.indentify('LetraMaiuscula', 0, 0, 'a'))
+    indentifier_all = IdentifierAll()
+    print(indentifier_all.indentify('Desconhecido', 0, 0, 'a'))
 
 
 if __name__ == '__main__':

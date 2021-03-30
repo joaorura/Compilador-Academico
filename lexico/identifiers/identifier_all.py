@@ -1,18 +1,9 @@
 from identifiers.identifier import Identifier
-from identifiers.tipo_indentifier import TipoIndetifier
-from identifiers.void_tipo_identifier import VoidTipoIdentifier
-from identifiers.letra_maiscula_identifier import LetraMaiusculaIdentifier
+from identifiers.identifier_finals import IDENTIFY_ALL_FINALS
 from tokens import Token
 
 
-IDENTIFY_ALL_FINALS = {
-    TipoIndetifier.CATEGORY: TipoIndetifier(),
-    VoidTipoIdentifier.CATEGORY: VoidTipoIdentifier(),
-    LetraMaiusculaIdentifier.CATEGORY: LetraMaiusculaIdentifier()
-}
-
-
-class IndetifierAll:
+class IdentifierAll:
     def __init__(self):
         for i, j in IDENTIFY_ALL_FINALS.items():
             if type(i) != str:

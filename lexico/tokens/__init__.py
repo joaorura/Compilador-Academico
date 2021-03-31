@@ -14,3 +14,14 @@ from tokens.finals import CharToken
 from tokens.finals import IntToken
 from tokens.finals import FloatToken
 from tokens.finals import BoolToken
+from tokens.finals import IgualToken
+from tokens.finals import VirgulaToken
+from tokens.finals import PontoVirgulaToken
+from tokens.finals import AbrirChaveToken
+from tokens.finals import FecharChaveToken
+from tokens.finals import AbrirColcheteToken
+from tokens.finals import FecharColcheteToken
+from tokens.finals import AbrirParentesesToken
+from tokens.finals import FecharParentesesToken
+from tokens.finals import WhileToken
+from tokens.finals import ScanToken

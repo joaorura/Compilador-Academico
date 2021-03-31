@@ -15,3 +15,14 @@ from identifiers.finals.char_identifier import CharIdentifier
 from identifiers.finals.int_identifier import IntIdentifier
 from identifiers.finals.float_identifier import FloatIdentifier
 from identifiers.finals.bool_identifier import BoolIdentifier
+from identifiers.finals.igual_identifier import IgualIdentifier
+from identifiers.finals.virgula_identifier import VirgulaIdentifier
+from identifiers.finals.ponto_virgula_identifier import PontoVirgulaIdentifier
+from identifiers.finals.abrir_chave_identifier import AbrirChaveIdentifier
+from identifiers.finals.fechar_chave_identifier import FecharChaveIdentifier
+from identifiers.finals.abrir_colchete_identifier import AbrirColcheteIdentifier
+from identifiers.finals.fechar_colchete_identifier import FecharColcheteIdentifier
+from identifiers.finals.abrir_parenteses_identifier import AbrirParentesesIdentifier
+from identifiers.finals.fechar_parenteses_identifier import FecharParentesesIdentifier
+from identifiers.finals.while_identifier import WhileIdentifier
+from identifiers.finals.scan_identifier import ScanIdentifier

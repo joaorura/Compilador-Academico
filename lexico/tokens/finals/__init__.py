@@ -13,3 +13,14 @@ from tokens.finals.char_token import CharToken
 from tokens.finals.int_token import IntToken
 from tokens.finals.float_token import FloatToken
 from tokens.finals.bool_token import BoolToken
+from tokens.finals.igual_token import IgualToken
+from tokens.finals.virgula_token import VirgulaToken
+from tokens.finals.ponto_virgula_token import PontoVirgulaToken
+from tokens.finals.abrir_chave_token import AbrirChaveToken
+from tokens.finals.fechar_chave import FecharChaveToken
+from tokens.finals.abrir_colchete_token import AbrirColcheteToken
+from tokens.finals.fechar_colchete_token import FecharColcheteToken
+from tokens.finals.abrir_parenteses_token import AbrirParentesesToken
+from tokens.finals.fechar_parenteses_token import FecharParentesesToken
+from tokens.finals.while_token import WhileToken
+from tokens.finals.scan_token import ScanToken

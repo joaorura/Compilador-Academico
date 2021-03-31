@@ -17,3 +17,14 @@ from identifiers.finals import CharIdentifier
 from identifiers.finals import IntIdentifier
 from identifiers.finals import FloatIdentifier
 from identifiers.finals import BoolIdentifier
+from identifiers.finals import IgualIdentifier
+from identifiers.finals import VirgulaIdentifier
+from identifiers.finals import PontoVirgulaIdentifier
+from identifiers.finals import AbrirChaveIdentifier
+from identifiers.finals import FecharChaveIdentifier
+from identifiers.finals import AbrirChaveIdentifier
+from identifiers.finals import FecharChaveIdentifier
+from identifiers.finals import AbrirParentesesIdentifier
+from identifiers.finals import FecharParentesesIdentifier
+from identifiers.finals import WhileIdentifier
+from identifiers.finals import ScanIdentifier

@@ -33,9 +33,10 @@ class Read:
         actual_token = self._tokens[self._actual_col]
         self._actual_col += 1
 
-        result = self._identifiers_all.identify_all(self._actual_line, self._actual_col, actual_token)
+        rest, token = self._identifiers_all.identify_all(self._actual_line, self._actual_col, actual_token)
+        self._tokens[self._actual_col] = rest + self._tokens[self._actual_col]
 
-        if result is None:
+        if token is None:
             raise Exception
         else:
-            return result
+            return token

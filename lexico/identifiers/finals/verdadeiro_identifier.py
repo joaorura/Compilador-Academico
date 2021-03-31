@@ -2,7 +2,7 @@ from identifiers.identifier import Identifier
 from tokens import VerdadeiroToken
 
 
-class MainIdentifier(Identifier):
+class VerdadeiroIdentifier(Identifier):
     PATTERN = r'True'
     
     CATEGORY = VerdadeiroToken.CATEGORY

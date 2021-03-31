@@ -7,3 +7,11 @@ from tokens.finals import UnknowToken
 from tokens.finals import VoidTipoToken
 from tokens.finals import DigitosToken
 from tokens.finals import UnderlineToken
+from tokens.finals import ConstanteToken
+from tokens.finals import MainToken
+from tokens.finals import RetornoToken
+from tokens.finals import IfToken
+from tokens.finals import ElseToken
+from tokens.finals import VerdadeiroToken
+from tokens.finals import FalsoToken
+from tokens.finals import PrintToken

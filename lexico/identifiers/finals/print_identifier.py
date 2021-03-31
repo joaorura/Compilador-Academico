@@ -2,7 +2,7 @@ from identifiers.identifier import Identifier
 from tokens import PrintToken
 
 
-class Printdentifier(Identifier):
+class PrintIdentifier(Identifier):
     PATTERN = r'print'
     
     CATEGORY = PrintToken.CATEGORY

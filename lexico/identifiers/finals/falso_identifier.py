@@ -2,7 +2,7 @@ from identifiers.identifier import Identifier
 from tokens import FalsoToken
 
 
-class MainIdentifier(Identifier):
+class FalsoIdentifier(Identifier):
     PATTERN = r'False'
     
     CATEGORY = FalsoToken.CATEGORY

@@ -12,6 +12,8 @@ from identifiers.finals import RetornoIdentifier
 from identifiers.finals import IfIdentifier
 from identifiers.finals import ElseIdentifier
 from identifiers.finals import PrintIdentifier
-
-
-
+from identifiers.finals import StringIdentifier
+from identifiers.finals import CharIdentifier
+from identifiers.finals import IntIdentifier
+from identifiers.finals import FloatIdentifier
+from identifiers.finals import BoolIdentifier

@@ -8,3 +8,8 @@ from tokens.finals.retorno_token import RetornoToken
 from tokens.finals.if_token import IfToken
 from tokens.finals.else_token import ElseToken
 from tokens.finals.print_token import PrintToken
+from tokens.finals.string_token import StringToken
+from tokens.finals.char_token import CharToken
+from tokens.finals.int_token import IntToken
+from tokens.finals.float_token import FloatToken
+from tokens.finals.bool_token import BoolToken

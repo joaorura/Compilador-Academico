@@ -9,3 +9,8 @@ from tokens.finals import RetornoToken
 from tokens.finals import IfToken
 from tokens.finals import ElseToken
 from tokens.finals import PrintToken
+from tokens.finals import StringToken
+from tokens.finals import CharToken
+from tokens.finals import IntToken
+from tokens.finals import FloatToken
+from tokens.finals import BoolToken

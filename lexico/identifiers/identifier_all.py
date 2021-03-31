@@ -21,7 +21,8 @@ class IdentifierAll:
 
     @staticmethod
     def identify(the_type: str, line: int, col: int, lexeme: str) -> Token:
-        return IDENTIFY_ALL_FINALS[the_type].identify(line, col, lexeme)
+        body = the_type[0].upper() + the_type.lower()[1:]
+        return IDENTIFY_ALL_FINALS[body].identify(line, col, lexeme)
 
     def identify_all(self, line: int, col: int, lexeme: str) -> Token:
         for i in self._types:

@@ -3,7 +3,7 @@ from tokens.token import Token
 
 
 class UnknowToken(Token):
-    _ENUMERATION = 0
+    _ENUMERATION = 100
     CATEGORY = 'Desconhecido'
     
     def __init__(self, line: int, col: int, lexeme: str):

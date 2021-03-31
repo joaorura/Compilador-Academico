@@ -2,7 +2,7 @@ from tokens.token import Token
 
 
 class RetornoToken(Token):
-    _ENUMERATION = 10
+    _ENUMERATION = 5
     CATEGORY = 'Retorno'
 
     def __init__(self, line: int, col: int, lexeme: str):

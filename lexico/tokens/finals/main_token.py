@@ -2,7 +2,7 @@ from tokens.token import Token
 
 
 class MainToken(Token):
-    _ENUMERATION = 9
+    _ENUMERATION = 4
     CATEGORY = 'Main'
 
     def __init__(self, line: int, col: int, lexeme: str):

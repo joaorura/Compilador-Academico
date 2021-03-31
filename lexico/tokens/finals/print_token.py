@@ -2,7 +2,7 @@ from tokens.token import Token
 
 
 class PrintToken(Token):
-    _ENUMERATION = 15
+    _ENUMERATION = 8
     CATEGORY = 'Print'
 
     def __init__(self, line: int, col: int, lexeme: str):

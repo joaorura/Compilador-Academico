@@ -2,7 +2,7 @@ from tokens.token import Token
 
 
 class UnderlineToken(Token):
-    _ENUMERATION = 7
+    _ENUMERATION = 2
     CATEGORY = 'Underline'
 
     def __init__(self, line: int, col: int, lexeme: str):

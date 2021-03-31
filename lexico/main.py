@@ -12,7 +12,7 @@ def main():
 
 def test():
     identifier_all = IdentifierAll()
-    print(identifier_all.identify('Underline', 0, 0, "_"))
+    print(identifier_all.identify('Print', 0, 0, "print"))
 
 
 if __name__ == '__main__':

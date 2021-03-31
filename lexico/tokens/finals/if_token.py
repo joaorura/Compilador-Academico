@@ -2,7 +2,7 @@ from tokens.token import Token
 
 
 class IfToken(Token):
-    _ENUMERATION = 11
+    _ENUMERATION = 6
     CATEGORY = 'If'
 
     def __init__(self, line: int, col: int, lexeme: str):

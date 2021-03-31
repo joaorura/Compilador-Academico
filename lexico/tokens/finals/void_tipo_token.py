@@ -2,7 +2,7 @@ from tokens.token import Token
 
 
 class VoidTipoToken(Token):
-    _ENUMERATION = 2
+    _ENUMERATION = 1
     CATEGORY = 'VoidTipo'
 
     def __init__(self, line: int, col: int, lexeme: str):

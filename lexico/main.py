@@ -12,7 +12,9 @@ def main():
 
 def test():
     identifier_all = IdentifierAll()
-    print(identifier_all.identify('float', 0, 0, "21.0"))
+    a, b = identifier_all.identify('float', 0, 0, "21.0aaa")
+    print(a)
+    print(b)
 
 
 if __name__ == '__main__':

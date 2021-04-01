@@ -3,7 +3,7 @@ from tokens import StringToken
 
 
 class StringIdentifier(Identifier):
-    PATTERN = r"\"[\w\s\[\]{}()<(>)\"'=|.,;]*\""
+    PATTERN = r"\"[\w\s\[\]{}()<(>)\"'=|.,;!?]*\""
 
     CATEGORY = StringToken.CATEGORY
 

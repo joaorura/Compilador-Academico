@@ -28,3 +28,18 @@ from identifiers.finals import AbrirParentesesIdentifier
 from identifiers.finals import FecharParentesesIdentifier
 from identifiers.finals import WhileIdentifier
 from identifiers.finals import ScanIdentifier
+from identifiers.finals import IdentificadorIdentifier
+from identifiers.finals import OperadorConcatenacaoIdentifier
+from identifiers.finals import OperadorOuIdentifier
+from identifiers.finals import OperadorEIdentifier
+from identifiers.finals import OperadorMaiorIdentifier
+from identifiers.finals import OperadorMenorIdentifier
+from identifiers.finals import OperadorMaiorIgualIdentifier
+from identifiers.finals import OperadorMenorIgualIdentifier
+from identifiers.finals import OperadorIgualIdentifier
+from identifiers.finals import OperadorAdicaoIdentifier
+from identifiers.finals import OperadorSubtracaoIdentifier
+from identifiers.finals import OperadorMultiplicacaoIdentifier
+from identifiers.finals import OperadorRestoIdentifier 
+from identifiers.finals import OperadorNegacaoIdentifier
+

@@ -1,29 +1,30 @@
-from identifiers import IdentifierAll
 from read.read import Read
 from sys import argv
+import os
+import pathlib
 
 
-FILE_TEST0 = '../programs_test/Hello World.txt'
-FILE_TEST1 = '../programs_test/Fibonnaci.txt'
-FILE_TEST2 = '../programs_test/ShellSort.txt'
+def get_path(path_abs: str):
+    path = os.path.relpath(path_abs)
+
+    if not os.path.isfile(path):
+        print('O path passado não é um arquivo.')
+        return None
+    if pathlib.Path(path).suffix != '.d':
+        print('Arquivo de formato errado.')
+        return None
+
+    return path
 
 
 def main():
-    read = Read(argv[1])
-    result = read.get_token()
-    while result is not None:
-        print(result)
+    print('Analisando arquivo: ', argv[1])
 
+    path = get_path(argv[1])
 
-def test():
-    identifier_all = IdentifierAll()
-    a, b = identifier_all.identify('Float', 0, 0, "21.0aaa")
-    print(a)
-    print(b)
+    print('\n\n\n')
 
-
-def test_file():
-    read = Read(FILE_TEST1)
+    read = Read(path)
 
     token = read.get_token()
 
@@ -33,4 +34,4 @@ def test_file():
 
 
 if __name__ == '__main__':
-    test_file()
+    main()

@@ -13,28 +13,48 @@ class Read:
         self._max = None
         self._tokens = None
 
-    def _read_next(self) -> str:
+        self._read_next()
+
+    def _read_next(self):
         line = self._file.readline()
+
+        if len(line) == 0:
+            raise StopIteration()
+
+        print(f"{'{:02d}'.format(self._actual_line)}  ")
+
         line = line.replace('\t', ' ')
         line = line.replace('\n', ' ')
         self._tokens = list(line.split(' '))
-        self._tokens = filter(lambda x: x != '', self._tokens)
+        self._tokens = list(filter(lambda x: x != '', self._tokens))
         self._actual_col = 0
         self._actual_line += 1
         self._max = len(self._tokens)
 
     def get_token(self) -> Token:
-        if self._actual_line == self._actual_col:
+        if self._actual_col >= self._max:
             try:
                 self._read_next()
+
+                while self._max == 0:
+                    self._read_next()
             except StopIteration:
                 return None
 
         actual_token = self._tokens[self._actual_col]
+
+        rest, token = self._identifiers_all.identify_all(self._actual_line - 1, self._actual_col, actual_token)
+
         self._actual_col += 1
 
-        rest, token = self._identifiers_all.identify_all(self._actual_line, self._actual_col, actual_token)
-        self._tokens[self._actual_col] = rest + self._tokens[self._actual_col]
+        if rest != '':
+            if self._actual_col >= self._max:
+                self._tokens[self._actual_col - 1] = self._tokens[self._actual_col - 1].replace(rest, '')
+                self._tokens.append('' + rest)
+                self._max = len(self._tokens)
+            else:
+                self._tokens[self._actual_col - 1] = self._tokens[self._actual_col - 1].replace(rest, '')
+                self._tokens[self._actual_col] = rest + self._tokens[self._actual_col]
 
         if token is None:
             raise Exception

@@ -3,7 +3,7 @@ from tokens import VirgulaToken
 
 
 class VirgulaIdentifier(Identifier):
-    PATTERN = r"_"
+    PATTERN = r"\,"
 
     CATEGORY = VirgulaToken.CATEGORY
 

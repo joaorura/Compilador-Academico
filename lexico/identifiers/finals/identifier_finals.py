@@ -46,7 +46,7 @@ IDENTIFY_ALL_FINALS = {
     AbrirChaveIdentifier.CATEGORY: AbrirChaveIdentifier(),
     FecharChaveIdentifier.CATEGORY: FecharChaveIdentifier(),
     AbrirColcheteIdentifier.CATEGORY: AbrirColcheteIdentifier(),
-    FecharColcheteIdentifier.CATEGORY: FecharChaveIdentifier(),
+    FecharColcheteIdentifier.CATEGORY: FecharColcheteIdentifier(),
     AbrirParentesesIdentifier.CATEGORY: AbrirParentesesIdentifier(),
     FecharParentesesIdentifier.CATEGORY: FecharParentesesIdentifier(),
     WhileIdentifier.CATEGORY: WhileIdentifier(),

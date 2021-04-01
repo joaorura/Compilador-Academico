@@ -3,7 +3,7 @@ from tokens import AbrirColcheteToken
 
 
 class AbrirColcheteIdentifier(Identifier):
-    PATTERN = r"\[{"
+    PATTERN = r"\{"
 
     CATEGORY = AbrirColcheteToken.CATEGORY
 

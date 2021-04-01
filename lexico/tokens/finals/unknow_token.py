@@ -1,7 +1,6 @@
 from tokens.token import Token
 
 
-
 class UnknowToken(Token):
     _ENUMERATION = 100
     CATEGORY = 'Desconhecido'

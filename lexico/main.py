@@ -3,6 +3,9 @@ from read.read import Read
 from sys import argv
 
 
+FILE_TEST = 'C:\\Users\\jmess\\Downloads\\main.txt'
+
+
 def main():
     read = Read(argv[1])
     result = read.get_token()
@@ -17,5 +20,15 @@ def test():
     print(b)
 
 
+def test_file():
+    read = Read(FILE_TEST)
+
+    token = read.get_token()
+
+    while token is not None:
+        print(token)
+        token = read.get_token()
+
+
 if __name__ == '__main__':
-    test()
+    test_file()

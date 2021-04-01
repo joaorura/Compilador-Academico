@@ -1,0 +1,110 @@
+00  
+          [0000, 0000] (0000, Tipo                ) {int}
+          [0000, 0001] (0040, Identificador       ) {fib}
+          [0000, 0002] (0021, AbrirParenteses     ) {(}
+          [0000, 0003] (0000, Tipo                ) {int}
+          [0000, 0004] (0040, Identificador       ) {n}
+          [0000, 0005] (0022, FecharParenteses    ) {)}
+01  
+          [0001, 0000] (0020, AbrirColchete       ) {{}
+02  
+          [0002, 0000] (0000, Tipo                ) {int}
+          [0002, 0001] (0040, Identificador       ) {fib1}
+          [0002, 0002] (0014, Igual               ) {=}
+          [0002, 0003] (0011, Int                 ) {1}
+          [0002, 0004] (0015, Virgula             ) {,}
+          [0002, 0005] (0040, Identificador       ) {fib2}
+          [0002, 0006] (0014, Igual               ) {=}
+          [0002, 0007] (0011, Int                 ) {1}
+          [0002, 0008] (0015, Virgula             ) {,}
+          [0002, 0009] (0040, Identificador       ) {soma}
+          [0002, 0010] (0016, PontoVirgula        ) {;}
+03  
+04  
+          [0004, 0000] (0025, For                 ) {for}
+          [0004, 0001] (0021, AbrirParenteses     ) {(}
+          [0004, 0002] (0000, Tipo                ) {int}
+          [0004, 0003] (0040, Identificador       ) {i}
+          [0004, 0004] (0014, Igual               ) {=}
+          [0004, 0005] (0011, Int                 ) {3}
+          [0004, 0006] (0016, PontoVirgula        ) {;}
+          [0004, 0007] (0040, Identificador       ) {i}
+          [0004, 0008] (0032, OperadorMenorIgual  ) {<=}
+          [0004, 0009] (0040, Identificador       ) {n}
+          [0004, 0010] (0016, PontoVirgula        ) {;}
+          [0004, 0011] (0040, Identificador       ) {i}
+          [0004, 0012] (0014, Igual               ) {=}
+          [0004, 0013] (0040, Identificador       ) {i}
+          [0004, 0014] (0034, OperadorAdicao      ) {+}
+          [0004, 0015] (0011, Int                 ) {1}
+          [0004, 0016] (0022, FecharParenteses    ) {)}
+05  
+          [0005, 0000] (0020, AbrirColchete       ) {{}
+06  
+          [0006, 0000] (0040, Identificador       ) {soma}
+          [0006, 0001] (0014, Igual               ) {=}
+          [0006, 0002] (0040, Identificador       ) {fib1}
+          [0006, 0003] (0034, OperadorAdicao      ) {+}
+          [0006, 0004] (0040, Identificador       ) {fib2}
+          [0006, 0005] (0016, PontoVirgula        ) {;}
+07  
+          [0007, 0000] (0040, Identificador       ) {fib1}
+          [0007, 0001] (0014, Igual               ) {=}
+          [0007, 0002] (0040, Identificador       ) {fib2}
+          [0007, 0003] (0016, PontoVirgula        ) {;}
+08  
+          [0008, 0000] (0040, Identificador       ) {fib2}
+          [0008, 0001] (0014, Igual               ) {=}
+          [0008, 0002] (0040, Identificador       ) {soma}
+          [0008, 0003] (0016, PontoVirgula        ) {;}
+09  
+          [0009, 0000] (0021, FecharColchete      ) {}}
+10  
+11  
+          [0011, 0000] (0005, Retorno             ) {return}
+          [0011, 0001] (0040, Identificador       ) {fib2}
+          [0011, 0002] (0016, PontoVirgula        ) {;}
+12  
+          [0012, 0000] (0021, FecharColchete      ) {}}
+13  
+14  
+          [0014, 0000] (0000, Tipo                ) {int}
+          [0014, 0001] (0004, Main                ) {main}
+          [0014, 0002] (0021, AbrirParenteses     ) {(}
+          [0014, 0003] (0022, FecharParenteses    ) {)}
+15  
+          [0015, 0000] (0020, AbrirColchete       ) {{}
+16  
+          [0016, 0000] (0000, Tipo                ) {int}
+          [0016, 0001] (0040, Identificador       ) {n}
+          [0016, 0002] (0015, Virgula             ) {,}
+          [0016, 0003] (0040, Identificador       ) {fib_result}
+          [0016, 0004] (0016, PontoVirgula        ) {;}
+17  
+          [0017, 0000] (0024, Scan                ) {scan}
+          [0017, 0001] (0021, AbrirParenteses     ) {(}
+          [0017, 0002] (0040, Identificador       ) {n}
+          [0017, 0003] (0022, FecharParenteses    ) {)}
+          [0017, 0004] (0016, PontoVirgula        ) {;}
+18  
+19  
+          [0019, 0000] (0040, Identificador       ) {fib_result}
+          [0019, 0001] (0014, Igual               ) {=}
+          [0019, 0002] (0040, Identificador       ) {fib}
+          [0019, 0003] (0021, AbrirParenteses     ) {(}
+          [0019, 0004] (0040, Identificador       ) {n}
+          [0019, 0005] (0022, FecharParenteses    ) {)}
+          [0019, 0006] (0016, PontoVirgula        ) {;}
+20  
+21  
+          [0021, 0000] (0008, Print               ) {print}
+          [0021, 0001] (0021, AbrirParenteses     ) {(}
+          [0021, 0002] (0040, Identificador       ) {fib_result}
+          [0021, 0003] (0022, FecharParenteses    ) {)}
+          [0021, 0004] (0016, PontoVirgula        ) {;}
+22  
+          [0022, 0000] (0005, Retorno             ) {return}
+          [0022, 0001] (0011, Int                 ) {0}
+          [0022, 0002] (0016, PontoVirgula        ) {;}
+23  
+          [0023, 0000] (0021, FecharColchete      ) {}}

@@ -40,6 +40,7 @@ from identifiers.finals import OperadorIgualIdentifier
 from identifiers.finals import OperadorAdicaoIdentifier
 from identifiers.finals import OperadorSubtracaoIdentifier
 from identifiers.finals import OperadorMultiplicacaoIdentifier
+from identifiers.finals import OperadorDivisaoIdentifier
 from identifiers.finals import OperadorRestoIdentifier 
 from identifiers.finals import OperadorNegacaoIdentifier
 

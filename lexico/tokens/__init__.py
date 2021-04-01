@@ -27,7 +27,7 @@ from tokens.finals import WhileToken
 from tokens.finals import ScanToken
 from tokens.finals import IdentificadorToken
 from tokens.finals import OperadorConcatenacaoToken
-from tokens.finals import OperadorOuTOken
+from tokens.finals import OperadorOuToken
 from tokens.finals import OperadorEToken
 from tokens.finals import OperadorMaiorToken
 from tokens.finals import OperadorMenorToken

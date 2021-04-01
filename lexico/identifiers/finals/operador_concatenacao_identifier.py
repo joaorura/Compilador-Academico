@@ -2,7 +2,7 @@ from identifiers.identifier import Identifier
 from tokens import OperadorConcatenacaoToken
 
 
-class FloatIdentifier(Identifier):
+class OperadorConcatenacaoIdentifier(Identifier):
     PATTERN = r"::"
 
     CATEGORY = OperadorConcatenacaoToken.CATEGORY

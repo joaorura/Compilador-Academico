@@ -3,7 +3,7 @@ from tokens import OperadorMultiplicacaoToken
 
 
 class OperadorMultiplicacaoIdentifier(Identifier):
-    PATTERN = r'*'
+    PATTERN = r'\*'
     
     CATEGORY = OperadorMultiplicacaoToken.CATEGORY
 

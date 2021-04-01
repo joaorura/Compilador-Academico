@@ -17,7 +17,7 @@ def main():
 
 def test():
     identifier_all = IdentifierAll()
-    a, b = identifier_all.identify('float', 0, 0, "21.0aaa")
+    a, b = identifier_all.identify('Float', 0, 0, "21.0aaa")
     print(a)
     print(b)
 
@@ -33,4 +33,4 @@ def test_file():
 
 
 if __name__ == '__main__':
-    test_file()
+    test()

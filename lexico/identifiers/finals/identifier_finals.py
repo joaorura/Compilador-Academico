@@ -24,6 +24,21 @@ from identifiers.finals.abrir_parenteses_identifier import AbrirParentesesIdenti
 from identifiers.finals.fechar_parenteses_identifier import FecharParentesesIdentifier
 from identifiers.finals.while_identifier import WhileIdentifier
 from identifiers.finals.scan_identifier import ScanIdentifier
+from identifiers.finals.identificador_identifier import IdentificadorIdentifier
+from identifiers.finals.operador_concatenacao_identifier import OperadorConcatenacaoIdentifier
+from identifiers.finals.operador_ou_identifier import OperadorOuIdentifier
+from identifiers.finals.operador_e_identifier import OperadorEIdentifier
+from identifiers.finals.operador_maior_identifier import OperadorMaiorIdentifier
+from identifiers.finals.operador_menor_identifier import OperadorMenorIdentifier
+from identifiers.finals.operador_maior_igual_identifier import OperadorMaiorIgualIdentifier
+from identifiers.finals.operador_menor_igual_identifier import OperadorMenorIgualIdentifier
+from identifiers.finals.operador_igual_identifier import OperadorIgualIdentifier
+from identifiers.finals.operador_adicao_identifier import OperadorAdicaoIdentifier
+from identifiers.finals.operador_subtracao_identifier import OperadorSubtracaoIdentifier
+from identifiers.finals.operador_multiplicacao_identifier import OperadorMultiplicacaoIdentifier
+from identifiers.finals.operador_divisao_identifier import OperadorDivisaoIdentifier
+from identifiers.finals.operador_resto_identifier import OperadorRestoIdentifier 
+from identifiers.finals.operador_negacao_identifier import OperadorNegacaoIdentifier
 
 IDENTIFY_ALL_FINALS = {
     UnknowIdentifier.CATEGORY: UnknowIdentifier(),
@@ -51,4 +66,19 @@ IDENTIFY_ALL_FINALS = {
     FecharParentesesIdentifier.CATEGORY: FecharParentesesIdentifier(),
     WhileIdentifier.CATEGORY: WhileIdentifier(),
     ScanIdentifier.CATEGORY: ScanIdentifier(),
+    IdentificadorIdentifier.CATEGORY: IdentificadorIdentifier(),
+    OperadorConcatenacaoIdentifier.CATEGORY: OperadorConcatenacaoIdentifier(),
+    OperadorOuIdentifier.CATEGORY: OperadorOuIdentifier(),
+    OperadorEIdentifier.CATEGORY: OperadorEIdentifier(),
+    OperadorMaiorIdentifier.CATEGORY: OperadorMaiorIdentifier(),
+    OperadorMenorIdentifier.CATEGORY: OperadorMenorIdentifier(),
+    OperadorMaiorIgualIdentifier.CATEGORY: OperadorMaiorIgualIdentifier(),
+    OperadorMenorIgualIdentifier.CATEGORY: OperadorMenorIgualIdentifier(),
+    OperadorIgualIdentifier.CATEGORY: OperadorIgualIdentifier(),
+    OperadorAdicaoIdentifier.CATEGORY: OperadorAdicaoIdentifier(),
+    OperadorSubtracaoIdentifier.CATEGORY: OperadorSubtracaoIdentifier(),
+    OperadorMultiplicacaoIdentifier.CATEGORY: OperadorMultiplicacaoIdentifier(),
+    OperadorDivisaoIdentifier.CATEGORY: OperadorDivisaoIdentifier(),
+    OperadorRestoIdentifier.CATEGORY: OperadorRestoIdentifier(),
+    OperadorNegacaoIdentifier.CATEGORY: OperadorNegacaoIdentifier(),
 }

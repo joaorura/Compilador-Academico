@@ -2,7 +2,7 @@ from identifiers.identifier import Identifier
 from tokens import OperadorOuToken
 
 
-class OperadorOuToken(Identifier):
+class OperadorOuIdentifier(Identifier):
     PATTERN = r"\||"
 
     CATEGORY = OperadorOuToken.CATEGORY

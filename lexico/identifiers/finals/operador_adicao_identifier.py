@@ -3,7 +3,7 @@ from tokens import OperadorAdicaoToken
 
 
 class OperadorAdicaoIdentifier(Identifier):
-    PATTERN = r'+'
+    PATTERN = r'\+'
     
     CATEGORY = OperadorAdicaoToken.CATEGORY
 

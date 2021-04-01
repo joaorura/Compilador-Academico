@@ -3,7 +3,7 @@ from tokens import OperadorNegacaoToken
 
 
 class OperadorNegacaoIdentifier(Identifier):
-    PATTERN = r"_{0,1}[A-Za-z0-9_]+(\[\d*\])*"
+    PATTERN = r"\!"
 
     CATEGORY = OperadorNegacaoToken.CATEGORY
 

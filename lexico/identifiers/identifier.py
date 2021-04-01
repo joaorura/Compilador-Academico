@@ -10,7 +10,7 @@ class Identifier(abc.ABC):
         self._regex = re.compile(self._pattern)
 
     def match(self, lexeme: str) -> bool:
-        result = self._regex.sub('$%!', lexeme)
+        result = self._regex.sub('$%!', lexeme, 1)
         result = result.split('$%!')
 
         if result[0] == '':
@@ -20,16 +20,21 @@ class Identifier(abc.ABC):
             return False
 
     def get_token(self, lexeme) -> str:
-        result = self._regex.sub('$%!', lexeme)
+        result = self._regex.sub('$%!', lexeme, 1)
         result = result.split('$%!')
 
         if result[0] == '':
-            return lexeme.replace(result[1], '')
+            if result[1] == '':
+                return lexeme
+            else:
+                a = ''
+                a = a.join(lexeme.rsplit(result[1], 1))
+                return a
         else:
             return None
 
     def get_rest_token(self, lexeme) -> str:
-        result = self._regex.sub('$%!', lexeme)
+        result = self._regex.sub('$%!', lexeme, 1)
         result = result.split('$%!')
 
         if result[0] == '':

@@ -40,3 +40,4 @@ from tokens.finals import OperadorMultiplicacaoToken
 from tokens.finals import OperadorDivisaoToken
 from tokens.finals import OperadorRestoToken
 from tokens.finals import OperadorNegacaoToken
+from tokens.finals import ForToken

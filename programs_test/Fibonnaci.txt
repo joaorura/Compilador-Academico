@@ -17,7 +17,7 @@ int main()
 	int n, fib_result;
 	scan(n);
 
-	fib_result = fib;
+	fib_result = fib(n);
 	
 	print(fib_result);
 	return 0;

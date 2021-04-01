@@ -35,6 +35,9 @@ class IdentifierAll:
             rest_token, token_obj = self.identify(i, line, col, lexeme)
 
             if token_obj is not None:
+                if token_obj.get_category() == 'For':
+                    a = 0
+
                 return rest_token, token_obj
 
         return self.identify(self._unknown, line, col, lexeme)

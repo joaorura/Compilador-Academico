@@ -23,7 +23,7 @@ def test():
 
 
 def test_file():
-    read = Read(FILE_TEST2)
+    read = Read(FILE_TEST1)
 
     token = read.get_token()
 
@@ -33,4 +33,4 @@ def test_file():
 
 
 if __name__ == '__main__':
-    test()
+    test_file()

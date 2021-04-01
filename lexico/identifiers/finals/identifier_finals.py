@@ -39,6 +39,7 @@ from identifiers.finals.operador_multiplicacao_identifier import OperadorMultipl
 from identifiers.finals.operador_divisao_identifier import OperadorDivisaoIdentifier
 from identifiers.finals.operador_resto_identifier import OperadorRestoIdentifier 
 from identifiers.finals.operador_negacao_identifier import OperadorNegacaoIdentifier
+from identifiers.finals.for_identifier import ForIdentifier
 
 IDENTIFY_ALL_FINALS = {
     UnknowIdentifier.CATEGORY: UnknowIdentifier(),
@@ -55,6 +56,7 @@ IDENTIFY_ALL_FINALS = {
     CharIdentifier.CATEGORY: CharIdentifier(),
     IntIdentifier.CATEGORY: IntIdentifier(),
     FloatIdentifier.CATEGORY: FloatIdentifier(),
+    BoolIdentifier.CATEGORY: BoolIdentifier(),
     IgualIdentifier.CATEGORY: IgualIdentifier(),
     VirgulaIdentifier.CATEGORY: VirgulaIdentifier(),
     PontoVirgulaIdentifier.CATEGORY: PontoVirgulaIdentifier(),
@@ -66,14 +68,14 @@ IDENTIFY_ALL_FINALS = {
     FecharParentesesIdentifier.CATEGORY: FecharParentesesIdentifier(),
     WhileIdentifier.CATEGORY: WhileIdentifier(),
     ScanIdentifier.CATEGORY: ScanIdentifier(),
-    IdentificadorIdentifier.CATEGORY: IdentificadorIdentifier(),
+    ForIdentifier.CATEGORY: ForIdentifier(),
     OperadorConcatenacaoIdentifier.CATEGORY: OperadorConcatenacaoIdentifier(),
     OperadorOuIdentifier.CATEGORY: OperadorOuIdentifier(),
     OperadorEIdentifier.CATEGORY: OperadorEIdentifier(),
-    OperadorMaiorIdentifier.CATEGORY: OperadorMaiorIdentifier(),
-    OperadorMenorIdentifier.CATEGORY: OperadorMenorIdentifier(),
     OperadorMaiorIgualIdentifier.CATEGORY: OperadorMaiorIgualIdentifier(),
     OperadorMenorIgualIdentifier.CATEGORY: OperadorMenorIgualIdentifier(),
+    OperadorMaiorIdentifier.CATEGORY: OperadorMaiorIdentifier(),
+    OperadorMenorIdentifier.CATEGORY: OperadorMenorIdentifier(),
     OperadorIgualIdentifier.CATEGORY: OperadorIgualIdentifier(),
     OperadorAdicaoIdentifier.CATEGORY: OperadorAdicaoIdentifier(),
     OperadorSubtracaoIdentifier.CATEGORY: OperadorSubtracaoIdentifier(),
@@ -81,4 +83,5 @@ IDENTIFY_ALL_FINALS = {
     OperadorDivisaoIdentifier.CATEGORY: OperadorDivisaoIdentifier(),
     OperadorRestoIdentifier.CATEGORY: OperadorRestoIdentifier(),
     OperadorNegacaoIdentifier.CATEGORY: OperadorNegacaoIdentifier(),
+    IdentificadorIdentifier.CATEGORY: IdentificadorIdentifier()
 }

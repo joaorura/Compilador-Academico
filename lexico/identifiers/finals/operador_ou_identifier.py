@@ -3,7 +3,7 @@ from tokens import OperadorOuToken
 
 
 class OperadorOuIdentifier(Identifier):
-    PATTERN = r"\||"
+    PATTERN = r"\|\|"
 
     CATEGORY = OperadorOuToken.CATEGORY
 

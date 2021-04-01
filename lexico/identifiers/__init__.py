@@ -43,4 +43,4 @@ from identifiers.finals import OperadorMultiplicacaoIdentifier
 from identifiers.finals import OperadorDivisaoIdentifier
 from identifiers.finals import OperadorRestoIdentifier 
 from identifiers.finals import OperadorNegacaoIdentifier
-
+from identifiers.finals import ForIdentifier

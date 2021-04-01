@@ -39,3 +39,4 @@ from tokens.finals.operador_multiplicacao_token import OperadorMultiplicacaoToke
 from tokens.finals.operador_divisao_token import OperadorDivisaoToken
 from tokens.finals.operador_resto_token import OperadorRestoToken
 from tokens.finals.operador_negacao_token import OperadorNegacaoToken
+from tokens.finals.for_token import ForToken

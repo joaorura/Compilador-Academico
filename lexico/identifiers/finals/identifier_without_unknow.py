@@ -36,8 +36,9 @@ from identifiers.finals.operador_adicao_identifier import OperadorAdicaoIdentifi
 from identifiers.finals.operador_subtracao_identifier import OperadorSubtracaoIdentifier
 from identifiers.finals.operador_multiplicacao_identifier import OperadorMultiplicacaoIdentifier
 from identifiers.finals.operador_divisao_identifier import OperadorDivisaoIdentifier
-from identifiers.finals.operador_resto_identifier import OperadorRestoIdentifier 
+from identifiers.finals.operador_resto_identifier import OperadorRestoIdentifier
 from identifiers.finals.operador_negacao_identifier import OperadorNegacaoIdentifier
+from identifiers.finals.for_identifier import ForIdentifier
 
 IDENTIFY_WITHOUT_UNKNOWN = {
     TipoIndetifier.CATEGORY: TipoIndetifier(),
@@ -59,20 +60,20 @@ IDENTIFY_WITHOUT_UNKNOWN = {
     PontoVirgulaIdentifier.CATEGORY: PontoVirgulaIdentifier(),
     AbrirChaveIdentifier.CATEGORY: AbrirChaveIdentifier(),
     FecharChaveIdentifier.CATEGORY: FecharChaveIdentifier(),
-    AbrirColcheteIdentifier.CATEGORY: BoolIdentifier(),
-    FecharColcheteIdentifier.CATEGORY: FecharChaveIdentifier(),
+    AbrirColcheteIdentifier.CATEGORY: AbrirColcheteIdentifier(),
+    FecharColcheteIdentifier.CATEGORY: FecharColcheteIdentifier(),
     AbrirParentesesIdentifier.CATEGORY: AbrirParentesesIdentifier(),
     FecharParentesesIdentifier.CATEGORY: FecharParentesesIdentifier(),
     WhileIdentifier.CATEGORY: WhileIdentifier(),
     ScanIdentifier.CATEGORY: ScanIdentifier(),
-    IdentificadorIdentifier.CATEGORY: IdentificadorIdentifier(),
+    ForIdentifier.CATEGORY: ForIdentifier(),
     OperadorConcatenacaoIdentifier.CATEGORY: OperadorConcatenacaoIdentifier(),
     OperadorOuIdentifier.CATEGORY: OperadorOuIdentifier(),
     OperadorEIdentifier.CATEGORY: OperadorEIdentifier(),
-    OperadorMaiorIdentifier.CATEGORY: OperadorMaiorIdentifier(),
-    OperadorMenorIdentifier.CATEGORY: OperadorMenorIdentifier(),
     OperadorMaiorIgualIdentifier.CATEGORY: OperadorMaiorIgualIdentifier(),
     OperadorMenorIgualIdentifier.CATEGORY: OperadorMenorIgualIdentifier(),
+    OperadorMaiorIdentifier.CATEGORY: OperadorMaiorIdentifier(),
+    OperadorMenorIdentifier.CATEGORY: OperadorMenorIdentifier(),
     OperadorIgualIdentifier.CATEGORY: OperadorIgualIdentifier(),
     OperadorAdicaoIdentifier.CATEGORY: OperadorAdicaoIdentifier(),
     OperadorSubtracaoIdentifier.CATEGORY: OperadorSubtracaoIdentifier(),
@@ -80,4 +81,5 @@ IDENTIFY_WITHOUT_UNKNOWN = {
     OperadorDivisaoIdentifier.CATEGORY: OperadorDivisaoIdentifier(),
     OperadorRestoIdentifier.CATEGORY: OperadorRestoIdentifier(),
     OperadorNegacaoIdentifier.CATEGORY: OperadorNegacaoIdentifier(),
+    IdentificadorIdentifier.CATEGORY: IdentificadorIdentifier()
 }

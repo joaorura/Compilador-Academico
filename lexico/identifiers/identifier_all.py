@@ -37,4 +37,4 @@ class IdentifierAll:
             if token_obj is not None:
                 return rest_token, token_obj
 
-        return '', self.identify(self._unknown, line, col, lexeme)
+        return self.identify(self._unknown, line, col, lexeme)

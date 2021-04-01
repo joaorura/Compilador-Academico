@@ -1,5 +1,6 @@
 import abc
 
+
 class Token(abc.ABC):
     def __init__(self, line: int, col: int, enumeration: int, category: str, lexeme: str):
         self._line = line
@@ -31,4 +32,4 @@ class Token(abc.ABC):
     def __str__(self) -> str:
         return f'          [{"{:04d}".format(self._line)}, {"{:04d}".format(self._col)}] ' \
                + f'({"{:04d}".format(self._enumeration)}, {"{:20s}".format(self._category)})' \
-                 + f'{"{"}{self._lexeme}{"}"}'
+                 + f' {"{"}{self._lexeme}{"}"}'

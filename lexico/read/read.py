@@ -47,7 +47,9 @@ class Read:
 
         self._actual_col += 1
 
-        if rest != '':
+        if rest is None:
+            return token
+        elif rest != '':
             if self._actual_col >= self._max:
                 self._tokens[self._actual_col - 1] = self._tokens[self._actual_col - 1].replace(rest, '')
                 self._tokens.append('' + rest)

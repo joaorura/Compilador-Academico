@@ -3,7 +3,9 @@ from read.read import Read
 from sys import argv
 
 
-FILE_TEST = 'C:\\Users\\jmess\\Downloads\\main.txt'
+FILE_TEST0 = '../programs_test/Hello World.txt'
+FILE_TEST1 = '../programs_test/Fibonnaci.txt'
+FILE_TEST2 = '../programs_test/ShellSort.txt'
 
 
 def main():
@@ -21,7 +23,7 @@ def test():
 
 
 def test_file():
-    read = Read(FILE_TEST)
+    read = Read(FILE_TEST2)
 
     token = read.get_token()
 

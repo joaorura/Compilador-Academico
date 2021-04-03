@@ -24,11 +24,24 @@ void shellSort(int vet[])
 
 int main()
 {
-    int vet[] = { 3, 1, 2, 4 };
+    int len;
+    scan("%d", &len)
+
+    int array[len];
+
+    for(int i : (0, len, 1)) {
+        scan("%d", &array[i])
+    }
+
+    for(int i : (0, len, 1)) {
+        print("%d", array[i])
+    }
     
     shellSort(vet);
 
-    print(vet);
+    for(int i : (0, len, 1)) {
+        print("%d", array[i])
+    }
 
     return 0;
 }

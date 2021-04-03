@@ -46,6 +46,9 @@ class Read:
             return False
 
         self._line += 1
+
+        print(f'{"{:04d}  ".format(self._line)}')
+
         self._cols = 1
         self._actual_lexeme = 0
         self._max_cols = len(result)

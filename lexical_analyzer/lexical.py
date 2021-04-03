@@ -2,6 +2,7 @@ import re
 
 from read import Read
 from the_tokens import Token
+from categories import Categories
 from regex import REGEX
 
 
@@ -23,6 +24,8 @@ class Lexical:
                 token = Token(self._reader.get_line(), self._reader.get_col(), search.group(0), i)
 
                 return rest_lexeme, token
+
+        return '', Token(self._reader.get_line(), self._reader.get_col(), lexeme, Categories.DESCONHECI)
 
     def get_token(self) -> Token:
         result = self._identify_lexeme()

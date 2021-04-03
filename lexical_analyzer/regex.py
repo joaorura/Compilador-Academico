@@ -43,11 +43,11 @@ REGEX = {
     Categories.OP_IGUAL: r"=",
     Categories.OP_ADIC: r"\+",
     Categories.OP_SUB: r"-",
-    Categories.OP_MULT: r"\*",
+    Categories.DEREF_MULT: r"\*",
     Categories.OP_DIV: r"/",
     Categories.OP_RESTO: r"%",
     Categories.OP_NEG: r"!",
     Categories.IDENTIFI: r"_{0,1}[A-Za-z0-9_]+",
     Categories.DOIS_PONT: r":",
-    Categories.OP_REF: r"&"
+    Categories.OP_REF: r"&",
 }

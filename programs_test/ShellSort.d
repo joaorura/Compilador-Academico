@@ -40,7 +40,7 @@ int main()
     shellSort(vet);
 
     for(int i : (0, len, 1)) {
-        print("%d", array[i])
+        print("%d", &array[i])
     }
 
     return 0;

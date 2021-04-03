@@ -41,7 +41,7 @@ class Categories(Enum):
     OP_IGUAL = auto()
     OP_ADIC = auto()
     OP_SUB = auto()
-    OP_MULT = auto()
+    DEREF_MULT = auto()
     OP_DIV = auto()
     OP_RESTO = auto()
     OP_NEG = auto()

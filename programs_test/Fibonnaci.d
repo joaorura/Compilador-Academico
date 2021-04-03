@@ -15,7 +15,7 @@ void fib(int n)
 int main()
 {
 	int n;
-	scan("%d", n);
+	scan("%d", &n);
 	fib(n);
 	
 	return 0;

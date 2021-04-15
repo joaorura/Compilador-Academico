@@ -1,21 +1,20 @@
-void fib(int n)                             
+void fib(int n)                          
 {                                          
 	int fib1 = 1, fib2 = 1, soma;
 
-	for (int i : (3, n, 1))           
-	{    
-		print("%d", fib1);
+	while(fib2 < n) {
+		print(fib1);
 		                                    
 		soma = fib1 + fib2;                    
 		fib1 = fib2;                           
-		fib2 = soma;                           
-	}                                        
+		fib2 = soma;
+	}
 }                                          
 
 int main()
 {
 	int n;
-	scan("%d", &n);
+	scan(n);
 	fib(n);
 	
 	return 0;

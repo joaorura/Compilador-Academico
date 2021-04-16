@@ -1,6 +1,5 @@
 from os import path
 from pathlib import Path
-from re import match
 
 
 class Read:
@@ -13,31 +12,42 @@ class Read:
         self._reader = open(path_file, 'r')
         self._line = 0
 
+        self._actual_line = None
         self._cols = None
         self._lexemes = None
         self._actual_lexeme = None
-        self._max_cols = None
 
         self._read_line()
 
     def _separate_lexemes(self, line: str):
-        line = line.replace('\n', '')
         self._lexemes = []
         lexeme = ''
         count = None
+        count_white = None
+
         for i, j in enumerate(line):
-            if match(r'^(\t| )', j):
+            if j == ' ':
+                if count_white is not None:
+                    count_white += 1
+
                 if lexeme != '':
-                    self._lexemes.append([count + 1, lexeme])
+                    self._lexemes.append([count, count_white, lexeme])
                     lexeme = ''
-                    count = None
+                    count = count_white = None
             else:
                 if count is None:
-                    count = i
+                    count = i + 1
+                    count_white = 0
+
                 lexeme += j
 
         if lexeme != '':
-            self._lexemes.append([count + 1, lexeme])
+            self._lexemes.append([count, 0, lexeme])
+
+        if len(self._lexemes) > 0:
+            self._lexemes[len(self._lexemes) - 1][1] = 0
+
+        return
 
     def _read_line(self):
         result = self._reader.readline()
@@ -45,13 +55,16 @@ class Read:
         if result == '':
             return False
 
+        result = result.replace('\n', '')
+        result = result.replace('\t', '    ')
+        self._actual_line = result
+
         self._line += 1
 
-        print(f'{"{:04d}  ".format(self._line)}')
+        print("\n\n{:04d}  {:s}".format(self._line, result))
 
         self._cols = 1
         self._actual_lexeme = 0
-        self._max_cols = len(result)
 
         self._separate_lexemes(result)
 
@@ -84,20 +97,24 @@ class Read:
 
         if self._actual_lexeme >= len(self._lexemes):
             the = self._lexemes[self._actual_lexeme - 1]
-            the[1] = lexeme
-            col = the[0] + len(the[1]) + 1
-            self._lexemes.append([col, rest_token])
+            the[2] = lexeme
+            col = the[0] + the[1] + len(lexeme)
+            self._lexemes.append([col, 0, rest_token])
         else:
-            the = self._lexemes[self._actual_lexeme]
-            self._lexemes[self._actual_lexeme - 1][1] = lexeme
-            the[1] = rest_token + the[1]
-            the[0] -= len(rest_token)
+            the0 = self._lexemes[self._actual_lexeme - 1]
+            the0[2] = lexeme
+
+            the1 = self._lexemes[self._actual_lexeme]
+            col = the1[0] - the0[1] - len(rest_token)
+            new = [col, the0[1], rest_token]
+            self._lexemes.insert(self._actual_lexeme, new)
+            the0[1] = 0
 
     def get_lexeme(self) -> str:
         if not self._check_end_line() or not self._jump_white_line():
             return None
 
-        col, lexeme = self._lexemes[self._actual_lexeme]
+        col, white, lexeme = self._lexemes[self._actual_lexeme]
         self._cols = col
         self._actual_lexeme += 1
 

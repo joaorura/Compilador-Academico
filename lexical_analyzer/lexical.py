@@ -4,12 +4,19 @@ from read import Read
 from the_tokens import Token
 from categories import Categories
 from regex import REGEX
-
+from os.path import relpath
+from pathlib import Path
 
 class Lexical:
     def __init__(self, path_file):
-        self._path_file = path_file
-        self._reader = Read(path_file)
+        self._path_file = Path(path_file)
+
+        if not self._path_file.exists():
+            raise Exception('Arquivo não existe.')
+
+        if self._path_file.suffix != '.d':
+            raise Exception('Arquivo possui extensão diferente de .d')
+        self._reader = Read(self._path_file)
 
     def _identify_lexeme(self) -> tuple:
         lexeme = self._reader.get_lexeme()

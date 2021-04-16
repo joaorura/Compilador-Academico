@@ -2,7 +2,7 @@ void fib(int n)
 {                                          
 	int fib1 = 1, fib2 = 1, soma;
 
-	while(fib2 < n) {
+	while(fib1 < n) {
 		print(fib1);
 		                                    
 		soma = fib1 + fib2;                    

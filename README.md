@@ -10,7 +10,7 @@ Veja o documento [em](https://docs.google.com/document/d/1KGHPbxSzmB6DH5mQyn4ekf
 
 ### Gramatica Livre de Contexto
 
-Veja o documetno [em](https://docs.google.com/document/d/1_DRJOw8IQEj7b09CXCnQBZNyUTOiKdDQm80lMoc9lZ8/edit?usp=sharing)
+Veja o documento [em](https://docs.google.com/document/d/1_DRJOw8IQEj7b09CXCnQBZNyUTOiKdDQm80lMoc9lZ8/edit?usp=sharing)
 
 ### Regex
 

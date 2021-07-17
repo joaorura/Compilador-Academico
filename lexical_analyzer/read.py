@@ -24,9 +24,10 @@ class Read:
         lexeme = ''
         count = None
         count_white = None
+        sem_aspas = True
 
         for i, j in enumerate(line):
-            if j == ' ':
+            if j == ' ' and sem_aspas:
                 if count_white is not None:
                     count_white += 1
 
@@ -35,6 +36,9 @@ class Read:
                     lexeme = ''
                     count = count_white = None
             else:
+                if j == '"':
+                    sem_aspas = not sem_aspas
+
                 if count is None:
                     count = i + 1
                     count_white = 0

@@ -1,14 +1,14 @@
 import re
-
-from read import Read
-from the_tokens import Token
-from categories import Categories
-from regex import REGEX
-from os.path import relpath
 from pathlib import Path
 
+from lexical_analyzer.read import Read
+from lexical_analyzer.the_tokens import Token
+from lexical_analyzer.categories import Categories
+from lexical_analyzer.regex import REGEX
+
+
 class Lexical:
-    def __init__(self, path_file):
+    def __init__(self, path_file: str):
         self._path_file = Path(path_file)
 
         if not self._path_file.exists():
@@ -16,9 +16,9 @@ class Lexical:
 
         if self._path_file.suffix != '.d':
             raise Exception('Arquivo possui extensão diferente de .d')
-        self._reader = Read(self._path_file)
+        self._reader = Read(path_file)
 
-    def _identify_lexeme(self) -> tuple:
+    def _identify_lexeme(self):
         lexeme = self._reader.get_lexeme()
 
         if lexeme is None:
@@ -34,7 +34,7 @@ class Lexical:
 
         return '', Token(self._reader.get_line(), self._reader.get_col(), lexeme, Categories.DESCONHECI)
 
-    def get_token(self) -> Token:
+    def get_token(self):
         result = self._identify_lexeme()
         if result is None:
             return None

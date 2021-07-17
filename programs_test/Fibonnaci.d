@@ -1,4 +1,4 @@
-void fib(int n)                          
+void fib(int n)
 {                                          
 	int fib1 = 1, fib2 = 1, soma;
 

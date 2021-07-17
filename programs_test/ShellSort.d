@@ -1,7 +1,7 @@
-void shellSort(int *vet)
+void shellSort(int[]* vet)
 {
     int i, j, value;
-    int size = len(vet);
+    int size = len(&vet);
     int h = 1;
     
     while (h < size) {
@@ -27,7 +27,7 @@ int main()
     int size;
     scan(size)
 
-    int array[size];
+    int[size] array;
 
     for(int i : (0, size, 1)) {
         scan(array[i])
@@ -40,7 +40,7 @@ int main()
     shellSort(&array);
 
     for(int i : (0, size, 1)) {
-        print("%d", array[i])
+        print("%i", array[i])
     }
 
     return 0;
